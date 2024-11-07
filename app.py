@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # 設定頁面配置
 st.set_page_config(
-    page_title='玉山GPT-beta',
+    page_title='災防智慧GPT-beta',
     page_icon='🛡️',
     layout='wide',
     initial_sidebar_state='expanded',
@@ -69,8 +69,8 @@ st.markdown(
 
 # 側邊欄
 with st.sidebar:
-    st.header('📖 關於玉山GPT')
-    st.write('jsdilfjkl;jvj')
+    st.header('📖 關於災防智慧GPT')
+    st.write('這是一款結合 AWS Bedrock 和 OpenAI 的聊天機器人，旨在提供災防科技相關的資訊。')
     st.write('請輸入您的問題，系統將為您檢索相關資訊並生成回答。')
 
     st.markdown('---')
@@ -90,11 +90,11 @@ with st.sidebar:
     st.write('📫 **聯絡方式**：您的聯絡資訊，如 email 或網站')
 
     # 添加版本信息
-    st.caption('版本: 0.0.1')
+    st.caption('版本: 0.0.3')
 
 # 主要內容區
 st.markdown("<div class='main-container'>", unsafe_allow_html=True)
-st.markdown("<h1 class='main-header'>玉山GPT-beta</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>災防智慧GPT-beta</h1>", unsafe_allow_html=True)
 
 # 初始化 Bedrock 客戶端和 Agent 客戶端
 bedrock_client, bedrock_agent_client, region = initialize_bedrock_clients()
