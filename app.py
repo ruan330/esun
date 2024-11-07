@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # 設定頁面配置
 st.set_page_config(
-    page_title='災防智慧GPT-beta',
+    page_title='玉山智慧GPT-beta',
     page_icon='🛡️',
     layout='wide',
     initial_sidebar_state='expanded',
@@ -69,8 +69,8 @@ st.markdown(
 
 # 側邊欄
 with st.sidebar:
-    st.header('📖 關於災防智慧GPT')
-    st.write('這是一款結合 AWS Bedrock 和 OpenAI 的聊天機器人，旨在提供災防科技相關的資訊。')
+    st.header('📖 關於玉山智慧智慧GPT')
+    st.write('fjlaijflk;wjreiogjklrg。')
     st.write('請輸入您的問題，系統將為您檢索相關資訊並生成回答。')
 
     st.markdown('---')
@@ -94,7 +94,7 @@ with st.sidebar:
 
 # 主要內容區
 st.markdown("<div class='main-container'>", unsafe_allow_html=True)
-st.markdown("<h1 class='main-header'>災防智慧GPT-beta</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>玉山智慧GPT-beta</h1>", unsafe_allow_html=True)
 
 # 初始化 Bedrock 客戶端和 Agent 客戶端
 bedrock_client, bedrock_agent_client, region = initialize_bedrock_clients()
@@ -179,5 +179,5 @@ if send_button and user_input:
 
 # 添加頁腳
 st.markdown('---')
-st.caption('© 2024 災防智慧GPT-beta. All rights reserved.')
+st.caption('© 2024 玉山智慧GPT-beta. All rights reserved.')
 st.markdown("</div>", unsafe_allow_html=True)
